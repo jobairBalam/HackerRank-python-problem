@@ -1,0 +1,16 @@
+A0,A1,A2 = (input("Enter clarity, originality, and difficulty value of A:").strip().split(' '))
+A = [int(A0),int(A1),int(A2)]
+
+B0,B1,B2 = (input("Enter clarity, originality, and difficulty value of B:").strip().split(' '))
+B = [int(B0),int(B1),int(B2)]
+numA = 0
+numB = 0
+
+for i in range(len(A)):
+    if A[i] > B[i] and B[i] <= 100:
+        numA += 1
+    elif A[i] < B[i] and A[i] <= 100:
+        numB += 1
+
+
+print(numA, numB)
