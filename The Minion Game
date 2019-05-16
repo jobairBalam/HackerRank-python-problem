@@ -1,0 +1,17 @@
+def minion_game(s):
+    V = frozenset("AEIOU")
+    n = len(s)
+    kevin = sum(q for c, q in zip(s, range(n, 0, -1)) if c in V)
+    stuart = n * (n + 1) // 2 - kevin
+    if kevin > stuart:
+        print("Kevin {:d}".format(kevin))
+    elif stuart > kevin:
+        print("Stuart {:d}".format(stuart))
+    else:
+        print("Draw")
+if __name__ == '__main__':
+    s = input()
+    minion_game(s)
+    
+    
+    
