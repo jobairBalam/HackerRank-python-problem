@@ -1,1 +1,1 @@
-                                            #HackerRank-python-problem
+#HackerRank-python-problem
